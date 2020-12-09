@@ -42,7 +42,7 @@ close = (container)=>{ //close function
 }    
 isAnimationFinished().then((isArray)=>{
      card.style.display ="flex";
-     main.style.animation = "reloadBody 2s linear";// animate body
+     main.style.animation = "reloadBody 1s linear";// animate body
       if(isArray){
                // check again if array of DOM
                container.forEach((containerElements)=>{
@@ -57,12 +57,12 @@ open=(container)=>{ //open function
      card.style.display ="none";
      if(isArrayOfDOM(container)){//if is not array of DOM
      container.style.display = "flex";
-     container.style.animation = "open 2s linear";
+     container.style.animation = "open 1s linear";
      return 
 }
       container.forEach((containerElement)=>{ // if is array of DOM
           containerElement.style.display = "flex";
-          containerElement.style.animation = "open 2s linear";
+          containerElement.style.animation = "open 1s linear";
       })
 }
 returnToMain=(name)=>{//return function
