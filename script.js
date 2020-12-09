@@ -31,13 +31,13 @@ close = (container)=>{ //close function
   let isAnimationFinished = async()=>{
      if(isArrayOfDOM(container)){ //if container is not array of DOM
           container.style.animation = "close 1s linear";      
-          await sleep(1000);//wait 2 seconds before return promise
+          await sleep(500);//wait 2 seconds before return promise
           return false;
      }
           container.forEach((containerElement)=>{ // if container is array of DOM 
           containerElement.style.animation = "close 1s linear";     
      }) 
-          await sleep(1000); //wait 2 seconds before return promise
+          await sleep(500); //wait 2 seconds before return promise
           return true;
 }    
 isAnimationFinished().then((isArray)=>{
