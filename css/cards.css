@@ -1,0 +1,280 @@
+.titles{
+   text-align: center;
+    margin-top: 100px;
+    color: azure;
+    margin-bottom: auto;
+}
+.main{
+    display: flex;
+    justify-content: center;
+}
+.container {
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 210px 210px 80px;
+  grid-template-areas: "image" "text" "stats";
+  border-radius: 18px;
+  background: white;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+  font-family: roboto;
+  text-align: center;
+  transition: 0.5s ease;
+  cursor: pointer;
+  margin:30px;
+
+
+}
+.era{
+   font-family: 'Crimson Text', serif;
+
+}
+.card-image {
+  grid-area: image;
+  background: url("/images/pre.jpg");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+.text{
+    font-family: 'Bebas Neue', cursive;
+
+}
+.card-text {
+  grid-area: text;
+  margin: 25px;
+}
+.date{
+    font-family: 'Crimson Text', serif;
+ 
+
+}
+.card-text .date {
+  color: rgb(64, 130, 212);
+  font-size:16px;
+}
+.card-text p {
+  color: grey;
+  font-size:15px;
+  font-weight: 300;
+}
+.card-text h2 {
+  margin-top:0px;
+  font-size:28px;
+}
+.card-stats {
+  grid-area: stats; 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+   background-image: linear-gradient(to right,#4082D4 0%,#2674CF 100%);
+}
+.card-stats:hover{
+      background-image: linear-gradient(to right,#2674CF 0%,#4082D4 100%);
+}
+.card-stats .stat {
+  padding:10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+.card-stats .border {
+  border-left: 1px solid rgb(64, 130, 212);
+  border-right: 1px solid rgb(64, 130, 212);
+}
+.card-stats .value{
+  font-size:22px;
+  font-weight: 500;
+}
+.card-stats .value sup{
+  font-size:12px;
+}
+.card-stats .type{
+  font-size:11px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.container:hover {
+  transform: scale(1.15);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+
+/*card2*/
+.card-image.card2 {
+  background: url("/images/spanish.jpg");
+  background-size: cover;
+}
+.card-text.card2 .date {
+  color: rgb(151, 190, 170);
+}
+.card-stats.card2 .border {
+  border-left: 1px solid rgb(151, 190, 170);
+  border-right: 1px solid rgb(151, 190, 170);
+}
+.card-stats.card2 {
+  background-image: linear-gradient(to right,#97BEAA 0%,#91B6AA 100%);
+}
+.card-stats.card2:hover{
+     background-image: linear-gradient(to right,#91B6AA 0%,#97BEAA 100%);
+}
+/*card3*/
+.card-image.card3 {
+  background: url("/images/american.jpg");
+  background-size: cover;
+}
+.card-text.card3 .date {
+  color: rgb(74, 89, 108);
+}
+.card-stats.card3 .border {
+  border-left: 1px solid rgb(74, 89, 108);
+  border-right: 1px solid rgb(74, 89, 108);
+}
+.card-stats.card3 {
+  background-image: linear-gradient(to right,#4B596C 0%,#546D80 100%);
+}
+.card-stats.card3:hover{
+    background-image: linear-gradient(to right,#546D80 0%,#4B596C 100%);
+}
+
+/*card4*/
+.card-image.card4 {
+  background: url("/images/Japanese.jpg");
+  background-size: cover;
+}
+.card-text.card4 .date {
+  color: rgb(87, 73, 86);
+}
+.card-stats.card4 .border {
+  border-left: 1px solid rgb(87, 73, 86);
+  border-right: 1px solid rgb(87, 73, 86);
+}
+.card-stats.card4 {
+  background-image: linear-gradient(to right,#574956 0%,#6F5A62 100%);
+}
+.card-stats.card4:hover{
+    background-image: linear-gradient(to right,#6F5A62 0%,#574956 100%);
+}
+/*card5*/
+.card-image.card5 {
+  background: url("/images/present.png");
+  background-size: cover;
+}
+.card-text.card5 .date {
+  color: rgb(156, 75, 80);
+}
+.card-stats.card5 .border {
+  border-left: 1px solid rgb(156, 75, 80);
+  border-right: 1px solid rgb(156, 75, 80);
+}
+.card-stats.card5 {
+  background-image: linear-gradient(to right,#9C4B50 0%,#893D48 100%);
+}
+.card-stats.card5:hover{
+    background-image: linear-gradient(to right,#893D48 0%,#9C4B50 100%);
+}
+/*A*/
+.Read{
+    text-decoration: none;
+    display: inline-block;
+    padding: 1rem 8rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #fff;
+    font-family: 'Crimson Text', serif;
+    width: 100%;
+    text-decoration: none;
+    
+}
+@media screen and (max-width: 1199px) {
+  * {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    height: auto;
+  }
+  body {
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0;
+    overflow: auto;
+    background-attachment: fixed;
+  }
+  body div {
+    width: 100%;
+  }
+  body div h1.title {
+    width: 100%;
+    margin-top: 20px;
+  }
+  body div.main {
+    margin-top: 20px;
+    width: 90%;
+  }
+  body div.main div.container {
+    width: 300px;
+  }
+  body div.main div.container div.card-image {
+    width: 100%;
+    vertical-align: top;
+  }
+  body div.main div.container div.card-text {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100% !important;
+    margin: 0;
+    padding: 10px;
+  }
+  body div.main div.container div.card-stats {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  body div.main div.container div.card-stats a {
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 1149px) {
+  body div.main {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1049px) {
+  body div.main {
+    width: 60%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 60px 0;
+  }
+}
+
+@media screen and (max-width: 699px) {
+  body div.main {
+    width: 100%;
+  }
+}
+
+  
+
