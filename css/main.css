@@ -147,6 +147,7 @@ img{
     }
     .btn{
         font-size: 0.9rem;
+        margin-left: 0px;
     }
   
 }@media screen and (max-width:468px){
@@ -158,6 +159,10 @@ img{
         min-width: 100%;
         max-width: 100%;
       
+    }
+    .btn{
+    font-size:0.6rem;
+        margin-left:0px;
     }
     
 }
